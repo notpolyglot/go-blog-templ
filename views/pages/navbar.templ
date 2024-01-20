@@ -1,0 +1,13 @@
+package pages
+
+templ Link(name string, path string) {
+    <li>
+        <a href={templ.URL(path)}>{name}</a>
+    </li>
+}
+
+templ NavBar() {
+    @Link("Home", "home")
+    @Link("News", "news")
+    @Link("Contact Us", "contact-us")
+}
